@@ -15,8 +15,17 @@ class App extends Component {
           <h1>Welcome to Anna's Pilates</h1>
         </div>
         <p className="App-intro">
-          sign in to see your progress
+          Sign in to see your progress
         </p>
+
+         {/* <Navbar />
+         <Login />
+         <Signin />
+         <img ></img>
+
+         <Footer /> */}
+
+        
       </div>
     );
   }
