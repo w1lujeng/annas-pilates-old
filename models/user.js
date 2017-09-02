@@ -13,7 +13,7 @@ var userSchema = new mongoose.Schema({
   },
   password: String
 }, {
-  timestamps: true
+  // timestamps: true
 });
 
 userSchema.set('toJSON', {
