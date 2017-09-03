@@ -17,11 +17,9 @@ app.use(express.static(path.join(__dirname, 'build')));
                            //these are double underscores
 app.use(bodyParser.json());
 
-// API routes 
-// app.use('/api/users', require('./routes/api/users'));
-// app.use('/api/topscores', require('./routes/api/topscores'));
+app.use(require('./config/auth'));
 
-
+app.use('/api/users', require('./routes/api/users'));
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
